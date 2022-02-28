@@ -1,0 +1,3 @@
+爬取的入口为main.py
+参数cookie和token为手动获取的，可能会失效，需要登录个人订阅号，通过页面获得
+增量实现是将爬取下的url的md5码存储在/crawler_url/*.txt中
