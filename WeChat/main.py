@@ -17,8 +17,8 @@ parser = argparse.ArgumentParser(description='args')
 parser.add_argument('--url_file', type=str, default='./crawler_url/exist_url_new.txt')
 
 # params in wechat account rank(rank_.py)
-parser.add_argument('--start', type=str, default='2022-2-23')
-parser.add_argument('--end', type=str, default='2022-2-23')
+parser.add_argument('--start', type=str, default='2022-2-25')
+parser.add_argument('--end', type=str, default='2022-2-25')
 parser.add_argument('--rank_name', type=str, default='文化')
 parser.add_argument('--rank_name_group', type=str, default='生活')
 
@@ -59,11 +59,13 @@ for name, biz_info in tqdm(account_biz_info_list):
         title = title.replace('/', '')
         title = title.replace('\\', '')
         if len(title) > 50:
-            title = title[:50]
-        file = folder + '/' + title + '.json'
+            new_title = title[:50]
+        else:
+            new_title = title
+        file = folder + '/' + new_title + '.json'
         time_value = str(datetime.datetime.fromtimestamp(create_time))
         article_content = articleInfo.get_text(url)
-        article_dict = {'create_time': time_value, 'url': url, 'text': '\n'.join(article_content)}
+        article_dict = {'create_time': time_value, 'title': title, 'url': url, 'text': '\n'.join(article_content), 'labels': []}
         with open(file, 'w', encoding='utf8') as f:
             # f.write(time_value)
             # f.write('\n')
