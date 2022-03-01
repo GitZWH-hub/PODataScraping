@@ -15,6 +15,8 @@
     2. Json文件格式：  
     {  
         &emsp; "create_name": "创建时间",  
+        &emsp; "title": "标题",  
         &emsp; "url": "文章链接",  
-        &emsp; "text": "内容"  
+        &emsp; "text": "内容",  
+        &emsp; "labels": ["标签1","标签2",...]  
     }
