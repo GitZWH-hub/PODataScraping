@@ -1,13 +1,11 @@
 ### 增量式文章爬取
 
-#### WeChat -- 微信公众号  
+#### WeChat -- 微信公众号  曾nan  
 
-#### Toutiao -- 今日头条  
+#### Toutiao -- 今日头条   毕ran  
 
-#### Xinlang -- 新浪新闻  
+#### SinaNews -- 新浪新闻   庄hai  
 
-#### Zhihu -- 知乎  
-
-#### Weibo -- 微博
+#### Weibo -- 微博   曾pengwu
 
 liuhuanyong
