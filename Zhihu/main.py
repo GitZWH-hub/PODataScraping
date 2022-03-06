@@ -7,16 +7,16 @@ with open(user_id_file, 'r') as f:
     for uid in f:
         url = f'https://www.zhihu.com/people/{uid.strip()}'
         author = client.author(url)
-        print('用户名 %s' % author.name)
-        print('用户id %s' % author.id)
+#         print('用户名 %s' % author.name)
+#         print('用户id %s' % author.id)
         # print('用户简介 %s' % author.motto)
         # print('用户行业 %s' % author.business)
         # print('用户关注人数 %d' % author.followee_num)
         # print('取用户粉丝数 %d' % author.follower_num)
         # # print('用户得到赞同数 %d' % author.upvote_num)
         # print('用户提问数 %d' % author.question_num)
-        print('用户答题数 %d' % author.answer_num)
-        print('用户答案:')
+#         print('用户答题数 %d' % author.answer_num)
+#         print('用户答案:')
         for (i, ans) in enumerate(author.answers):
             print(f'    {i}:{ans.question.title}')
             ans.save()
