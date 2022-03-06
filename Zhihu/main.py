@@ -18,7 +18,7 @@ with open(user_id_file, 'r') as f:
 #         print('用户答题数 %d' % author.answer_num)
 #         print('用户答案:')
         for (i, ans) in enumerate(author.answers):
-            print(f'    {i}:{ans.question.title}')
+#             print(f'    {i}:{ans.question.title}')
             ans.save()
 
 # question = client.question('https://www.zhihu.com/question/36966326')
