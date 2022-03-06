@@ -8,4 +8,6 @@
 
 #### [Weibo](https://github.com/GitZWH-hub/PODataScraping/tree/main/Weibo) -- [微博]   曾pengwu
 
+#### [Zhihu](https://github.com/GitZWH-hub/PODataScraping/tree/main/Zhihu) -- [知乎]   李yahe
+
 liuhuanyong
